@@ -1,13 +1,24 @@
-@import url('https://swaroop3108.github.io/dark-dc/source.css');
+/**
+ * @name Dark DC
+ * @description Discord, but is spooky and dark...
+ * @author swaroop3108
+ * @version 1.17.1
+ * @authorId 431883840483491850
+ * @invite pmpVeAEsxz
+ * @website https://github.com/swaroop3108/dark-dc/
+ * @source https://raw.githubusercontent.com/swaroop3108/dark-dc/master/source.css
+ */
+
+@import url('https://snappercord.github.io/dark-discord/src/source.css');
 
 .theme-dark,
 .theme-light,
 :root {
-  --background-primary: #191919;
+  --background-primary: #151515;
   --background-secondary: #101010;
   --background-secondary-alt: #292929;
-  --background-tertiary: #090909;
-  --background-accent: #242424;
+  --background-tertiary: #080808;
+  --background-accent: #292929;
   --background-floating: #000000;
   --background-modifier-hover: rgba(255, 255, 255, 0.05);
   --background-modifier-active: rgba(255, 255, 255, 0.075);
@@ -32,15 +43,4 @@
   --toast-box-shadow: rgba(0, 0, 0, 0.2);
   --toast-border: var(--background-tertiary);
   --offline-color: rgb(60, 60, 60);
-
-  --scrollbar-thin-thumb: #444444;
-  --scrollbar-thin-track: transparent;
-  --scrollbar-auto-thumb: #444444;
-  --scrollbar-auto-track: hsl(
-    210,
-    calc(var(--saturation-factor, 1) * 9.8%),
-    20%
-  );
-  --scrollbar-auto-scrollbar-color-thumb: #444444;
-  --scrollbar-auto-scrollbar-color-track: transparent;
 }
