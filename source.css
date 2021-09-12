@@ -1,0 +1,166 @@
+@import url('https://raw.githack.com/LuckFire/theme-source/main/old-theme-source.css');
+
+html.theme-dark .theme-light {
+  --header-primary: #fff;
+  --header-secondary: #b9bbbe;
+  --text-normal: #dcddde;
+  --background-primary: #141414 !important;
+  --background-secondary: #111111 !important;
+  --background-secondary-alt: #292929 !important;
+  --background-tertiary: black !important;
+  --background-modifier-accent: rgb(15, 15, 15) !important;
+  --background-modifier-hover: rgb(15, 15, 15) !important;
+}
+html.theme-dark .theme-light .root-1gCeng {
+  background-color: #141414 !important;
+  box-shadow: 0 0 0 1px var(--background-secondary),
+    0 2px 10px 0 rgba(0, 0, 0, 0.2) !important;
+}
+html.theme-dark .theme-light .footer-2gL1pp {
+  background-color: #0c0c0c !important;
+  box-shadow: inset 0 1px 0 var(--background-tertiary) !important;
+  color: var(--text-normal) !important;
+}
+.footerButton-ayFTfX.colorGrey-2DXtkV {
+  background-color: #242424 !important;
+}
+
+@keyframes settingsflash {
+  0% {
+    box-shadow: 0 2px 10px rgba(240, 71, 71, 0.2),
+      0 0 0 2px rgba(240, 70, 70, 0.3);
+  }
+
+  70% {
+    box-shadow: 0 0 20px 15px rgba(240, 71, 71, 0.1),
+      0 0 0 6px rgba(240, 70, 70, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 20px 15px rgba(240, 71, 71, 0),
+      0 0 0 6px rgba(240, 24, 70, 0.1);
+  }
+}
+
+.theme-light .layer-3QrUeG:first-of-type::before {
+  content: 'You need to have dark theme enabled for this theme to work properly. To enable it, go into Settings -> Appearance'; /* Warning Text */
+
+  position: fixed;
+  text-align: center;
+  width: 400px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  background: #202020; /* Inner Color */
+
+  transform: translate(-50%, -50%); /* Text Color */
+
+  color: #ffffff;
+  padding: 17px 16px 20px 13.5px;
+  box-shadow: 0 2px 10px rgba(240, 71, 71, 0.22);
+  border: 2.5px solid #f04747;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.theme-light .app-2rEoOp .layer-3QrUeG:first-of-type *::before,
+.theme-light .app-2rEoOp .layer-3QrUeG:first-of-type *::after,
+.theme-light .app-2rEoOp .layer-3QrUeG:first-of-type * {
+  visibility: hidden !important;
+}
+
+.theme-light .app-2rEoOp .layer-3QrUeG:first-of-type {
+  background-color: #1c1c1c !important; /* Color Behind Warning */
+}
+
+.theme-light
+  .preview-2nSL_2.cardPrimaryOutline-29Ujqw
+  + .marginTop40-i-78cZ
+  .radioGroup-1GBvlr
+  .cardPrimaryEditable-3KtE4g:first-of-type,
+.theme-light
+  .preview-2nSL_2.cardPrimaryOutline-29Ujqw
+  + .marginTop40-i-78cZ
+  .radioGroup-1GBvlr
+  .item-26Dhrx:first-of-type {
+  animation: settingsflash 1s ease infinite;
+  background: #f04747;
+  border-color: #f04747;
+}
+
+.theme-light
+  .preview-2nSL_2.cardPrimaryOutline-29Ujqw
+  + .marginTop40-i-78cZ
+  .radioGroup-1GBvlr
+  .cardPrimaryEditable-3KtE4g:first-of-type,
+.theme-light
+  .preview-2nSL_2.cardPrimaryOutline-29Ujqw
+  + .marginTop40-i-78cZ
+  .radioGroup-1GBvlr
+  .item-26Dhrx:first-of-type {
+  animation: settingsflash 1s ease infinite;
+  background: #f04747;
+  border-color: #f04747;
+  color: #ffffff;
+}
+
+.theme-light
+  .app-2rEoOp
+  .container-3baos1
+  > .noWrap-3jynv6
+  > .button-14-BFJ:nth-child(3) {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 70px;
+  width: 220px;
+  height: 40px;
+  visibility: visible !important;
+  background: #f04747 !important; /* Container Color */
+  border-radius: 4px;
+  animation: settingsflash 1s ease infinite;
+  opacity: 1;
+}
+
+.theme-light
+  .app-2rEoOp
+  .container-3baos1
+  > .noWrap-3jynv6
+  > .button-14-BFJ:nth-child(3)::before {
+  position: absolute;
+  content: 'GO TO SETTINGS';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 14px;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible !important;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.theme-light [aria-controls='Appearance-tab'] {
+  border: 2px solid #f04747;
+  animation: settingsflash 1s ease infinite;
+}
+
+.theme-light
+  .children-rWhLdy
+  > .marginTop40-i-78cZ:nth-child(2)
+  > div
+  > div[tabindex='-1'] {
+  border: 2px solid #f04747;
+  animation: settingsflash 1s ease infinite;
+}
+
+/* BD PLUGIN SUPPORT */
+#MemberCount {
+  background: transparent !important;
+}
