@@ -1,15 +1,11 @@
 /**
- * @name Dark DC
- * @description Discord, but is spooky and dark...
- * @author swaroop3108
- * @version 1.17.1
- * @authorId 431883840483491850
- * @invite pmpVeAEsxz
- * @website https://github.com/swaroop3108/dark-dc/
- * @source https://raw.githubusercontent.com/swaroop3108/dark-dc/master/source.css
- */
+* Dark-DC-modified
+* Original author: swaroop3108 (https://github.com/swaroop3108/)
+* Modified by: synth (https://github.com/c-um/
+* Modifications: Fixed import url, added nitro ad killer, removed gift/sticker button (ENGLISH ONLY)
+**/
 
-@import url('https://snappercord.github.io/dark-discord/src/source.css');
+@import url('https://raw.githubusercontent.com/swaroop3108/dark-dc/master/source.css');
 
 .theme-dark,
 .theme-light,
@@ -43,4 +39,28 @@
   --toast-box-shadow: rgba(0, 0, 0, 0.2);
   --toast-border: var(--background-tertiary);
   --offline-color: rgb(60, 60, 60);
+}
+
+[class^="channel-"] > div > [href="/store"], /* Nitro Button above DM List */
+[class^="channelTextArea"] [class^="buttons-"] > button, /* Gift Button */
+[class^="upsellVisible-"], /* Banner Nitro Upsell Header in the user modal */
+[class^="premiumIconWrapper"], /* Nitro Icon in top right on Banners */
+[class^="characterCount-"] [class*="upsell-"], /* "Send longer Messages with Discord Nitro!" */
+[class^="emojiSection-"] [class*="shinyButton-"], /* "Get Nitro" button in Emoji/Sticker modal" */
+[class*="tryItOutSection-"], /*try nitro banner section on profile editor*/
+[class^="premiumIcon"], /* Try remove booster badge */
+[class^="customizationSection-"] + [class^="upsellContainer-"], /* Per server profile customizations*/
+[class^="customizationSection-"][class*="disabled-"], /* Per server profile customizations*/
+[class*="bannerNitroUpsell-"], /* "Unlock Banner" in profile editor*/
+[class^="imageUploaderHint-"],
+[class^="imagePickerContainer-"] > [class^="optionBox-"]:nth-child(2) /* Remove gif option from profile pic upload option*/
+{
+    display: none !important;
+}
+
+button[aria-label="Send a gift"] {
+  display: none;
+}
+button[aria-label="Open sticker picker"] {
+  display: none;
 }
